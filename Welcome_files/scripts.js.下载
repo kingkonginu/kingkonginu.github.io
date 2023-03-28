@@ -1,0 +1,11 @@
+//libraries like jquery etc
+
+
+let hiddenElement = document.querySelector(".second-block");
+let btn = document.querySelector('.to-block');
+
+function handleButtonClick() {
+    hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
+}
+
+btn.addEventListener('click', handleButtonClick);
